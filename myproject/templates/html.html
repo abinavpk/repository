@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<center>
+    {% for a in products %}
+    <h><b>item:</b>{{a.item}}</h></br>
+    <h>store:{{a.store}}</h></br>
+    <h>no_item:{{a.no_item}} </h></br>
+     {%endfor%}
+
+    {% for b in Staff %}
+    <h><b>name:</b>{{b.name}}</h>
+    <br>
+    <h><b>email:</b>{{b.name}}</h>
+    <br>
+    {%endfor%}
+
+     {% for c in Courses %}
+    <h><b>name:</b>{{c.name}}</h></br>
+    <h>duration:{{c.duration}}</h></br>
+    {%endfor%}
+
+
+</center>
+</body>
+</html>

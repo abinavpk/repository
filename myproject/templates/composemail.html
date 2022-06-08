@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>email</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+<label>to</label>
+<input type="email" name="email"><br>
+<label>subject</label>
+<input type="text" name="subject"><br>
+<label>message</label>
+<textarea name="message"></textarea><br>
+
+<input type="submit" value="send" >
+</form>
+</body>
+</html>

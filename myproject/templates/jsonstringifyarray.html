@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Creat a JSON string from a JavaScript array.</h2>
+<p id="1"></p>
+
+<script>
+    const arr = '["john","Peter","Sally","Jane"]';
+    const myJSON=JSON.parse(arr);
+    document.getElementById("1").innerHTML = myJSON[1]+", "+myJSON[2]+","+myJSON[3]
+</script>
+
+</body>
+</html>

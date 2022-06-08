@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--alert box-->
+<!--<BUTTON ONCLICK="window.alert('welcome')">click</BUTTON>-->
+<!--confirm box-->
+<p id="1"></p>
+<button onclick="fun()">clickme</button>
+<script>
+    function fun()
+    {
+        let text;
+        if(confirm("press the button"))
+        {
+            text = "you press the ok "
+        }
+        else
+        {
+        text = "press the cancel"
+        }
+        document.getElementById("1").innerHTML=text
+
+    }
+</script>
+</body>
+</html>
